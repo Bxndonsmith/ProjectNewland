@@ -7,7 +7,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Globe, Zap, Cpu, Compass, Shield, Eye, Database, Activity, Map, Building, Rocket, HeartPulse, Microscope, Network, RefreshCw, Wind } from 'lucide-react';
-import habitatImage from './src/assets/images/regenerated_image_1777946581399.png';
 
 const NavLink = ({ href, children, offset }: { href: string, children: React.ReactNode, offset?: number }) => {
     const handleClick = (e: React.MouseEvent) => {
@@ -95,10 +94,6 @@ const App: React.FC = () => {
                 <NavLink href="#technology">Tech</NavLink>
                 <NavLink href="#expansion">Expansion</NavLink>
                 <NavLink href="#lki">LKI Research</NavLink>
-                <div className="h-6 w-[1px] bg-white/10 mx-2"></div>
-                <button className="px-6 py-2 border border-newland-gold/30 rounded-full text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-newland-gold hover:text-black transition-all duration-500 cursor-pointer shadow-[0_0_20px_rgba(232,193,127,0.1)]">
-                    Access Portal
-                </button>
             </div>
         </div>
       </nav>
@@ -177,7 +172,7 @@ const App: React.FC = () => {
                         className="max-w-md text-right border-r-2 border-newland-gold/20 pr-8"
                     >
                         <p className="text-xs text-white/40 uppercase tracking-[0.2em] leading-relaxed font-medium">
-                            "The transition from theoretical architecture to planetary operative is now complete. We have moved beyond the age of reactive maintenance into the era of absolute systemic integrity."
+                            "The transition from theoretical architecture to planetary operative is complete. We have moved beyond the age of reactive maintenance into the era of absolute systemic integrity."
                         </p>
                     </motion.div>
                 </div>
@@ -271,7 +266,7 @@ const App: React.FC = () => {
                         className="lg:col-span-7 h-[500px] md:h-[650px] glass-panel relative overflow-hidden rounded-[4rem] shadow-2xl border-white/10 group"
                     >
                         <img 
-                            src={habitatImage} 
+                            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=2070" 
                             alt="Autonomous Habitat Architecture" 
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[8s]"
                             referrerPolicy="no-referrer"
@@ -339,7 +334,7 @@ const App: React.FC = () => {
                                         ))}
                                     </div>
                                     <div className="pt-8 border-t border-white/5">
-                                        <p className="font-mono text-[9px] text-newland-gold/40 tracking-[0.4em] uppercase">Status: Broadcasting Universally</p>
+                                        <p className="font-mono text-[9px] text-newland-gold/40 tracking-[0.4em] uppercase">Status: Broadcast across every node</p>
                                     </div>
                                 </div>
                              </div>
@@ -362,10 +357,10 @@ const App: React.FC = () => {
                         </p>
 
                         <p className="text-xl text-white/50 leading-relaxed font-light mb-8 max-w-lg">
-                            Newland operates as a unified medical engine. Every micronation contributes real-time data to a global shared research lattice.
+                            Newland operates as a unified medical engine. Every micronation contributes data and discovery to a shared research lattice that is freely available, free from governmental or geopolitical ownership.
                         </p>
                         <p className="text-sm text-white/30 uppercase tracking-[0.2em] font-mono leading-relaxed mb-16 max-w-lg">
-                            Advancements in medical and scientific research are decentralized and immediately available to all humanity, abolishing the monetization of discovery.
+                            Health and science knowledge are distributed without restriction, ensuring that no single authority takes ownership of the advancement of human wellbeing.
                         </p>
                         <div className="space-y-4 mb-16">
                             {['Global Discovery Lattice', 'Zero-Latency Synthesis', 'Open-Science Protocol', 'Human Evolutionary Tiers'].map((label, i) => (
@@ -401,8 +396,8 @@ const App: React.FC = () => {
                     <div className="w-full lg:w-1/2 aspect-square relative glass-panel rounded-full overflow-hidden shadow-[0_0_150px_rgba(99,179,237,0.15)] group/orbit p-4">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,179,237,0.1)_0%,transparent_70%)]"></div>
                         <img 
-                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2074" 
-                            alt="Biological Resilience Lattice" 
+                            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=2074" 
+                            alt="Laboratory equipment and medical systems" 
                             className="w-full h-full object-cover grayscale opacity-40 brightness-75 contrast-125 group-hover/orbit:scale-110 transition-transform duration-[8s]"
                             referrerPolicy="no-referrer"
                         />
@@ -507,7 +502,7 @@ const App: React.FC = () => {
                         Technology that <span className="text-newland-energy italic">serves life</span>. 
                     </p>
                     <p className="text-xl text-white/50 font-light mb-16 max-w-2xl leading-relaxed">
-                        Logistics-integrated AI, molecular synthesis, and atmospheric regulation hubs dispersed throughout the planetary framework.
+                        Logistics-integrated AI, maritime travel energy systems, and public transit rails power a free city-wide energy grid. The entire system is engineered to eliminate landfills and process waste into pure water at the micro scale.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-24">
                         {[
@@ -524,7 +519,7 @@ const App: React.FC = () => {
                             { 
                                 icon: <Wind />, 
                                 title: "Atmospheric Anchors", 
-                                desc: "True zero-emission units that actively repair the environment. These nodes scrub particulate toxicity while Enriching the air with medical-grade oxygen." 
+                                desc: "Zero-emission environmental hubs that remove particulates and refresh the atmosphere while feeding regenerated oxygen back into the urban grid." 
                             }
                         ].map((item, idx) => (
                             <div key={idx} className="group/tech glass-panel p-8 border-newland-energy/10 hover:bg-newland-energy/5 transition-all duration-500">
@@ -632,7 +627,7 @@ const App: React.FC = () => {
                         the Liminal Knowledge Institute researches ancient scripts and the theoretical origins of harmony."
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
+                    <div className="grid grid-cols-1 xl:grid-cols-3 gap-16 w-full">
                         {[
                             { title: "Theoretical Core", desc: "Research into sacred geometry and zero-point resonance fields.", icon: <Database /> },
                             { title: "Ancient Records", desc: "Deciphering the blueprints of previous terrestrial epochs.", icon: <Compass /> },
@@ -703,14 +698,24 @@ const App: React.FC = () => {
         {/* Founder's Statement - Small & Subtle */}
         <section className="py-24 border-t border-white/5 bg-black/50 backdrop-blur-md">
             <div className="container mx-auto px-8">
-                <div className="max-w-4xl mx-auto text-center space-y-8">
+                <div className="max-w-4xl mx-auto text-center space-y-10">
+                    <div className="flex items-center justify-center gap-6 mx-auto max-w-[420px]">
+                        <div className="w-20 h-20 rounded-full overflow-hidden border border-newland-gold/20 shadow-[0_0_40px_rgba(232,193,127,0.08)]">
+                            <img
+                                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=400"
+                                alt="Founder portrait"
+                                className="w-full h-full object-cover"
+                                referrerPolicy="no-referrer"
+                            />
+                        </div>
+                        <div className="text-left">
+                            <h4 className="text-white text-xs font-bold tracking-[0.5em] uppercase">Brandon Smith</h4>
+                            <p className="text-newland-gold font-mono text-[9px] tracking-[0.4em] uppercase mt-2">Founder • Chief Architect</p>
+                        </div>
+                    </div>
                     <p className="font-serif text-2xl md:text-3xl text-white/70 italic leading-relaxed">
                         "Reality is no longer an accident. We have engineered it to serve the intentional evolution of our species."
                     </p>
-                    <div className="pt-4 border-t border-white/5 inline-block px-12">
-                         <h4 className="text-white text-xs font-bold tracking-[0.5em] uppercase">Brandon Smith</h4>
-                         <p className="text-newland-gold font-mono text-[9px] tracking-[0.4em] uppercase mt-2">Founder • Chief Architect</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -746,17 +751,17 @@ const App: React.FC = () => {
                         <NavLink href="#lki">Theoretical Archives</NavLink>
                     </div>
                     <div className="flex flex-col gap-6">
-                        <span className="text-[10px] text-newland-gold uppercase tracking-[0.5em] font-bold mb-4 border-b border-newland-gold/10 pb-2">Access</span>
-                        <NavLink href="#">Operational Code</NavLink>
-                        <NavLink href="#">Protocol Tiers</NavLink>
-                        <NavLink href="#">Compliance</NavLink>
+                        <span className="text-[10px] text-newland-gold uppercase tracking-[0.5em] font-bold mb-4 border-b border-newland-gold/10 pb-2">Operations</span>
+                        <NavLink href="#infrastructure">Free Energy Grid</NavLink>
+                        <NavLink href="#technology">Waste-to-Water</NavLink>
+                        <NavLink href="#health">Shared Health Mesh</NavLink>
                     </div>
                 </div>
             </div>
 
             <div className="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-12">
                 <span className="font-mono text-[9px] tracking-[0.6em] text-white/20 uppercase font-bold text-center md:text-left">
-                    © MMXXVI | NEWLAND OPERATIONAL SYSTEM | ALL SECTORS ACTIVE
+                    © MMXXVI | NEWLAND OPERATIONAL SYSTEM | ALL SECTORS INTEGRATED
                 </span>
                 <div className="flex gap-12 text-white/20 hover:text-white transition-colors cursor-pointer">
                     <Globe size={18} className="hover:text-newland-gold hover:scale-125 transition-all" />
